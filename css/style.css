@@ -974,12 +974,13 @@ h3.subheading-agileits-w3layouts {
 }
 
 .edu-img-agileits {
-	background: url(../images/scool.webp)no-repeat 0px 0px;
+	background: url(../images/scool.jpg)no-repeat 0px 0px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
 	background-size: cover;
+	width: 45%;
 	min-height: 444px;
 }
 
@@ -1806,9 +1807,12 @@ h3.subheading-agileits-w3layouts {
 		margin-top: 10px;
 	}
 
-		.edu-img-agileits{
+	.edu-img-agileits{
+
+		padding-right: 110px !important ;
+
 			margin-right: 110px !important ;
-			margin-top: 10px;
+			margin-top: 85px;
 
 			}
 
