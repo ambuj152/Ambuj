@@ -1805,9 +1805,17 @@ h3.subheading-agileits-w3layouts {
 		letter-spacing: 1px;
 		margin-top: 10px;
 	}
+
+		.edu-img-agileits{
+			margin-right: 110px !important ;
+			margin-top: 10px;
+
+			}
+
 	.edu-img-agileits,
 	.exp-img-agileits {
 		min-height: 200px;
+		margin-left: 40px;
 	}
 	.display-grid-1-w3lsagile {
 		padding: 3em 1em;
