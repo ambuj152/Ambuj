@@ -66,6 +66,24 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   gtag('config', 'G-98H8KRKT85');
 </script>
 
+<script>
+	$(function () { 
+  $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
+});  
+
+// $( window ).scroll(function() {   
+ // if($( window ).scrollTop() > 10){  // scroll down abit and get the action   
+  $(".progress-bar").each(function(){
+    each_bar_width = $(this).attr('aria-valuenow');
+    $(this).width(each_bar_width + '%');
+  });
+       
+ //  }  
+// });
+
+
+</script>
+
 <meta name="robots" content="noindex">
 <body><link rel="stylesheet" href="assests/css/font-awesome.min.css">
 <style>
@@ -207,6 +225,27 @@ RIGHT SIDEBAR TOGGLE SECTION
       margin-bottom: 0;
   }
 }
+
+.tooltip{ 
+	position:relative;
+	float:right;
+  }
+  .tooltip > .tooltip-inner {background-color: #eebf3f; padding:5px 15px; color:rgb(23,44,66); font-weight:bold; font-size:13px;}
+  .popOver + .tooltip > .tooltip-arrow {	border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #eebf3f;}
+  
+  section{
+	margin:100px auto; 
+	height:1000px;
+  }
+  .progress{
+	border-radius:0;
+	overflow:visible;
+  }
+  .progress-bar{
+	 background:rgb(23,44,60); 
+	-webkit-transition: width 1.5s ease-in-out;
+	transition: width 1.5s ease-in-out;
+  }
 </style>
 
 
@@ -363,7 +402,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 					<h5 class="title-w3">Education</h5>
 					<div class="clearfix"></div>
 				</div>
-				<div class="scrollbar agileits w3layouts" id="style-2">
+				<div class="scrollbar agileits w3layouts" id="style-2" style="height: 300px;">
 					<div class="activity-row agileits w3layouts">
 						<div class="activity-img agileits w3layouts">
 							<h6>2021-2024</h6>
@@ -404,11 +443,11 @@ RIGHT SIDEBAR TOGGLE SECTION
 
 			<!-- Scrolling-Articles -->
 			<div class="activity_box agileits w3layouts">
-				<div class="title-wthree work_box">
+				<div class="title-wthree work_box" >
 					<h5 class="title-w3">Work Experience</h5>
 					<div class="clearfix"></div>
 				</div>
-				<div class="scrollbar agileits w3layouts" id="style-1">
+				<div class="scrollbar agileits w3layouts" id="style-1" style="height: 400px;">
 					<div class="activity-row agileits w3layouts">
 						<!-- <div class="activity-img agileits w3layouts">
 							<h6>2016-present</h6>
@@ -427,6 +466,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 						<div class="activity-desc agileits w3layouts">
 							<h5>Genoviq Web Private LImited</h5>
 							<p class="para-agileits-w3layouts">PHP Developer</p>
+							<p class="para-agileits-w3layout">  Design And develop Fully dynamic website using HTML,CSS JAVASCRPt,Mysql, PHP</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -472,8 +512,8 @@ RIGHT SIDEBAR TOGGLE SECTION
 							<div class="w3_agileits_services_grid_1 i1">
 								<a class="fa fa-bookmark-o" aria-hidden="true"></a>
 							</div>
-							<h3>Best Logo Design</h3>
-							<p class="para-agileits-w3layouts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<h3>Python development</h3>
+							<p class="para-agileits-w3layouts">Complete certication and Awarde by Badge</p>
 						</div>
 					</div>
 					<div class="col-md-3 w3_agileits_services_grid">
@@ -481,8 +521,8 @@ RIGHT SIDEBAR TOGGLE SECTION
 							<div class="w3_agileits_services_grid_1 i2">
 								<a class="fa fa-television" aria-hidden="true"></a>
 							</div>
-							<h3>The Web Awards</h3>
-							<p class="para-agileits-w3layouts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<h3>Web development frontend+backend</h3>
+							<p class="para-agileits-w3layouts">Certified and awarded by IT SKIll & Solutions</p>
 						</div>
 					</div>
 					<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -490,8 +530,8 @@ RIGHT SIDEBAR TOGGLE SECTION
 							<div class="w3_agileits_services_grid_1 i3">
 								<a class="fa fa-magic" aria-hidden="true"></a>
 							</div>
-							<h3>Red Dot Award</h3>
-							<p class="para-agileits-w3layouts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<h3>Foundation in Java development</h3>
+							<p class="para-agileits-w3layouts">certified by the hacker rank.</p>
 						</div>
 					</div>
 					<div class="col-md-3 w3_agileits_services_grid">
@@ -499,14 +539,88 @@ RIGHT SIDEBAR TOGGLE SECTION
 							<div class="w3_agileits_services_grid_1 i4">
 								<a class="fa fa-trophy" aria-hidden="true"></a>
 							</div>
-							<h3>Prime Gold Award</h3>
-							<p class="para-agileits-w3layouts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<h3>Cloud Computing</h3>
+							<p class="para-agileits-w3layouts">Certified by IBM Company.</p>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
+				<!--write progress bar-->
+
+				
+			
 			<div class="col-md-6 skills-w3layouts">
+			<section>
+				<!--<h2 class="text-center">Scroll down the page a bit</h2><br><br> -->
+				<div class="row">
+					<div class="title-wthree">
+						<h5 class="title-w3">Skills</h5>
+						<div class="clearfix"></div>
+					</div>
+				  <div class="col-md-2 col-lg-2"></div>
+				   <div class="col-md-8 col-lg-8">
+					 
+			  <div class="barWrapper">
+			   <span class="progressText"><B>HTML5</B></span>
+			  <div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >   
+					  <span  class="popOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>     
+			  </div>
+			  </div>
+			  
+			  <div class="barWrapper">
+			   <span class="progressText"><B>CSS3</B></span>
+			  <div class="progress ">
+				<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100">
+				   <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+				</div>
+				
+			  </div>
+			  </div>
+			  
+			  <div class="barWrapper">
+			   <span class="progressText"><B>BOOTSTRAP</B></span>
+			  <div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+				   <span  class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>  
+				</div>
+			  </div>
+			  </div>
+			  <div class="barWrapper">
+			   <span class="progressText"><B>JQUERY</B></span>
+			  <div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+					   <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>  
+				</div>
+			  </div>
+			  </div>
+			  <div class="barWrapper">
+			   <span class="progressText"><B>MYSQL</B></span>
+			  <div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+					<span  class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>  
+				</div>
+			  </div>
+			  </div>
+				<div class="barWrapper">
+			   <span class="progressText"><B>PHP</B></span>
+			  <div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+					<span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span> 
+				</div>
+			  </div>
+			  </div>
+			  
+			  </div>
+				   <div class="col-md-2 col-lg-2"></div>
+				  </div>
+			  </div>
+				</section>
+				</div>
+			
+
+			<!-- <div class="col-md-6 skills-w3layouts">
 				<div class="title-wthree">
 					<h5 class="title-w3">Skills</h5>
 					<div class="clearfix"></div>
@@ -536,7 +650,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 					<h4>Git and Hub</h4>
 				</div>
 				
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<!-- //awards and skills -->
@@ -744,11 +858,11 @@ RIGHT SIDEBAR TOGGLE SECTION
         }
 
         .whatsapp-button img {
-            width: 20px; /* Adjust as needed */
+            width: 30px; /* Adjust as needed */
             margin-right: 10px;
         }
     </style>
-	<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+	<a href="https://wa.me/9793297402" class="whatsapp-button" target="_blank">
         <img src="images/whatsapp-icon.png" alt="WhatsApp Icon">
          WhatsApp
     </a>

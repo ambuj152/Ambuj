@@ -828,6 +828,9 @@ h3.subheading-agileits-w3layouts {
 .w3_agileits_services_grid:hover .w3_agileits_services_grid_agile p {
 	color: #000;
 }
+  /* progress*/
+
+  /* progress*/
 
 .para-w3 {
 	color: #555;
@@ -985,6 +988,8 @@ h3.subheading-agileits-w3layouts {
 }
 
 .exp-img-agileits {
+
+	padding-top:110px imo !important;
 	background: url(../images/exp.png)no-repeat 0px 0px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
